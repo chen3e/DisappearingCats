@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <!--<link rel="stylesheet" type="text/css" href="index.css">-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style type="text/css">
+            #wrapper{
+                width: 900px;
+            }
+            .cat{
+                width: 200px;
+                height: 200px;
+                display: inline-block;
+            }
+            #restore{
+                width: 140px;
+                height: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <img class="cat" src="Images/img1.jpg" alt="cat1">
+            <img class="cat" src="Images/img2.jpg" alt="cat2">
+            <img class="cat" src="Images/img3.jpg" alt="cat3">
+            <img class="cat" src="Images/img4.jpg" alt="cat4">
+            <img class="cat" src="Images/img5.jpg" alt="cat5">
+            <img class="cat" src="Images/img6.jpg" alt="cat6">
+            <img class="cat" src="Images/img7.jpg" alt="cat7">
+            <img class="cat" src="Images/img8.jpg" alt="cat8">
+        </div>
+        <button id="restore">I want my cats back!</button>
+
+        <script>
+            $('.cat').click(function(){
+                //console.log('clicked')
+                $(this).hide();
+            });
+            $('#restore').click(function(){
+                //console.log('clicked')
+                $('.cat').show();
+            })
+        </script>
+    </body>
+</html>
